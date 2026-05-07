@@ -1,0 +1,91 @@
+:root {
+  /*COLORS*/
+  --white: hsl(0, 0%, 100%);
+  --Stone-100: hsl(30, 54%, 90%);
+  --Stone-150: hsl(30, 18%, 87%);
+  --Stone-600: hsl(30, 10%, 34%);
+  --Stone-900: hsl(24, 5%, 18%);
+  --Brown-800: hsl(14, 45%, 36%);
+  --Rose-800: hsl(332, 51%, 32%);
+  --Rose-50: hsl(330, 100%, 98%);
+
+  /*TYPOGRAPHY*/
+  --primary-font: "Young Serif", sans serif;
+  --body-font: "Outfit", sans serif;
+
+  /*SPACING*/
+  /* 8 12 16 24 32*/
+  --space-1: 0.5rem;
+  --space-2: 0.75rem;
+  --space-3: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+}
+
+/* Box sizing reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--body-font);
+  background-color: var(--Stone-100);
+  color: var(--Stone-600);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  border-radius: var(--space-2);
+}
+
+h1,
+h2 {
+  color: var(--Brown-800);
+  font-family: var(--primary-font);
+}
+
+.hero h1 {
+  color: var(--Stone-900);
+}
+
+/* UTILITY CLASSES */
+.accent-text {
+  color: var(--Rose-800);
+}
+.img-container {
+  width: 100%;
+  margin-bottom: var(--space-5);
+}
+.container {
+  background-color: var(--white);
+  width: min(720px, 100%);
+  padding: var(--space-6);
+  border-radius: var(--space-5);
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.prep-time {
+  background-color: var(--Rose-50);
+  padding: var(--space-5);
+  border-radius: var(--space-5);
+}
