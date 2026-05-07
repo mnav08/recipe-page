@@ -44,12 +44,16 @@ body {
   font-family: var(--body-font);
   background-color: var(--Stone-100);
   color: var(--Stone-600);
+  line-height: 1.6;
 }
 
 img {
   display: block;
   max-width: 100%;
   border-radius: var(--space-2);
+}
+h2 {
+  font-weight: 400;
 }
 
 h1,
@@ -60,11 +64,17 @@ h2 {
 
 .hero h1 {
   color: var(--Stone-900);
+  font-weight: 500;
 }
 
 /* UTILITY CLASSES */
 .accent-text {
   color: var(--Rose-800);
+  font-weight: 600;
+  font-size: 1.12rem;
+}
+.prep-list {
+  font-weight: 600;
 }
 .img-container {
   width: 100%;
@@ -88,4 +98,16 @@ h2 {
   background-color: var(--Rose-50);
   padding: var(--space-5);
   border-radius: var(--space-5);
+}
+
+.prep-time ul {
+  padding-left: var(--space-5);
+}
+
+.prep-time li {
+  padding-left: 8px;
+}
+/* selects the bullet point */
+.prep-time li::marker {
+  color: var(--Rose-800);
 }
