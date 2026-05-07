@@ -109,34 +109,50 @@ hr {
 }
 
 /* separates bullet points from left */
-.prep-time ul {
-  padding-left: var(--space-5);
-}
-
-.ingredients ul {
+.bullets-left {
   padding-left: var(--space-5);
 }
 
 /* separates text from bullet points */
-.prep-time li {
-  padding-left: 8px;
-}
-
+.prep-time li,
+.instructions li,
 .ingredients li {
   padding-left: 8px;
 }
+
 /* selects the bullet point */
 .prep-time li::marker {
   color: var(--Rose-800);
 }
 
-.ingredients li::marker {
+.ingredients li::marker,
+.instructions li::marker {
   color: var(--Brown-800);
 }
 
+.instructions li::marker {
+  font-weight: 600;
+}
 /* spacing between items */
 .list-items {
   display: flex;
   flex-direction: column;
   gap: var(--space-1);
+}
+
+/* NUTRITION TABLE DESIGN */
+.nutrition table {
+  width: 100%;
+  border-collapse: collapse; /* removes extra space between cells */
+  margin-top: var(--space-3);
+}
+
+.nutrition td {
+  padding: var(--space-2) 0;
+  border-bottom: 1px solid var(--Stone-150);
+}
+
+.nutrition td:nth-child(2) {
+  color: var(--Brown-800);
+  font-weight: 600;
 }
