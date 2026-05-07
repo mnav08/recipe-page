@@ -54,6 +54,7 @@ img {
 }
 h2 {
   font-weight: 400;
+  margin: var(--space-3) 0;
 }
 
 h1,
@@ -65,6 +66,12 @@ h2 {
 .hero h1 {
   color: var(--Stone-900);
   font-weight: 500;
+}
+
+hr {
+  border: none; /* Remove default border */
+  border-top: 1px solid var(--Stone-150); /* Add your own border */
+  margin: var(--space-5) 0;
 }
 
 /* UTILITY CLASSES */
@@ -98,16 +105,38 @@ h2 {
   background-color: var(--Rose-50);
   padding: var(--space-5);
   border-radius: var(--space-5);
+  margin: var(--space-5) 0;
 }
 
+/* separates bullet points from left */
 .prep-time ul {
   padding-left: var(--space-5);
 }
 
+.ingredients ul {
+  padding-left: var(--space-5);
+}
+
+/* separates text from bullet points */
 .prep-time li {
+  padding-left: 8px;
+}
+
+.ingredients li {
   padding-left: 8px;
 }
 /* selects the bullet point */
 .prep-time li::marker {
   color: var(--Rose-800);
+}
+
+.ingredients li::marker {
+  color: var(--Brown-800);
+}
+
+/* spacing between items */
+.list-items {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
 }
